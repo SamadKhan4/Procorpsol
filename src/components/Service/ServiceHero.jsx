@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import serviceHero from "../../assets/serviceHero.png";
+import serviceHero from "../../assets/ServiceHero.png";
 
 const ServiceHero = ({
   title = "Expert Secretarial Support for Smooth Business Compliance",
