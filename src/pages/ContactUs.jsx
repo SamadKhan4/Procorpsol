@@ -19,8 +19,8 @@ const contactInfo = [
   {
     icon: <FiMail />,
     title: "Email Address",
-    desc: "hr@akulkarnipprocorpsol.com",
-    href: "mailto:hr@akulkarnipprocorpsol.com",
+    desc: "hr-manager@procorpsol.com",
+    href: "mailto:hr-manager@procorpsol.com",
   },
   {
     icon: <FiClock />,
@@ -39,7 +39,7 @@ const ContactUs = () => {
       `Name: ${data.get("name")}\nPhone: ${data.get("phone")}\nEmail: ${data.get("email")}\n\nComment:\n${data.get("comment")}`
     );
 
-    window.location.href = `mailto:hr@akulkarnipprocorpsol.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:hr-manager@procorpsol.com?subject=${subject}&body=${body}`;
     form.reset();
   };
 

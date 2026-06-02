@@ -3,6 +3,12 @@ import React from "react";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { FiPhone, FiMail, FiClock } from "react-icons/fi";
 
+const socialLinks = {
+  facebook: "https://www.facebook.com/profile.php?id=61568494702046",
+  instagram: "https://www.instagram.com/procorpsol/?hl=en",
+  linkedin: "https://www.linkedin.com/company/procorpsol/?viewAsMember=true",
+};
+
 const TopNavbar = () => {
   return (
     <div className="relative w-full bg-[#0B4D73] text-white text-sm">
@@ -10,7 +16,7 @@ const TopNavbar = () => {
           <span className="text-sm sm:text-base whitespace-nowrap">Follow Us:</span>
 
           <a
-            href="https://www.facebook.com/"
+            href={socialLinks.facebook}
             target="_blank"
             rel="noreferrer"
             aria-label="Visit us on Facebook"
@@ -19,7 +25,7 @@ const TopNavbar = () => {
             <FaFacebookF />
           </a>
           <a
-            href="https://www.instagram.com/"
+            href={socialLinks.instagram}
             target="_blank"
             rel="noreferrer"
             aria-label="Visit us on Instagram"
@@ -28,7 +34,7 @@ const TopNavbar = () => {
             <FaInstagram />
           </a>
           <a
-            href="https://www.linkedin.com/"
+            href={socialLinks.linkedin}
             target="_blank"
             rel="noreferrer"
             aria-label="Visit us on LinkedIn"
@@ -45,14 +51,14 @@ const TopNavbar = () => {
             <span>7569879002</span>
           </a>
 
-          <a href="mailto:hr@akulkarnipprocorpsol.com" className="flex min-w-0 items-center gap-2">
+          <a href="mailto:hr-manager@procorpsol.com" className="flex min-w-0 items-center gap-2">
             <FiMail className="text-[#18B76B] shrink-0" />
-            <span className="break-all sm:break-normal">hr@akulkarnipprocorpsol.com</span>
+            <span className="break-all sm:break-normal"> hr-manager@procorpsol.com</span>
           </a>
 
           <div className="flex items-center gap-2">
             <FiClock className="text-[#18B76B] shrink-0" />
-            <span className="whitespace-nowrap">Mon - Fri</span>
+            <span className="whitespace-nowrap">Mon - Sat</span>
           </div>
         </div>
       </div>

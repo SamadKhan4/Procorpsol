@@ -20,6 +20,13 @@ const serviceLinks = [
   { label: "Legal Documentation", to: "/services/legal" },
 ];
 
+const socialLinks = {
+  facebook: "https://www.facebook.com/profile.php?id=61568494702046",
+  instagram: "https://www.instagram.com/procorpsol/?hl=en",
+  linkedin: "https://www.linkedin.com/company/procorpsol/?viewAsMember=true",
+  x: "https://x.com/procorpsol",
+};
+
 const Footer = () => {
   return (
     <footer className="bg-[#252525] text-white px-5 sm:px-6 md:px-16 lg:px-[100px] pt-[30px] pb-[36px]">
@@ -49,7 +56,7 @@ const Footer = () => {
 
             <div className="flex items-center gap-2 mt-[30px]">
               <a
-                href="https://www.facebook.com/"
+                href={socialLinks.facebook}
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Visit us on Facebook"
@@ -58,7 +65,7 @@ const Footer = () => {
                 <FaFacebookF />
               </a>
               <a
-                href="https://www.instagram.com/"
+                href={socialLinks.instagram}
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Visit us on Instagram"
@@ -67,7 +74,7 @@ const Footer = () => {
                 <FaInstagram />
               </a>
               <a
-                href="https://www.linkedin.com/"
+                href={socialLinks.linkedin}
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Visit us on LinkedIn"
@@ -76,7 +83,7 @@ const Footer = () => {
                 <FaLinkedinIn />
               </a>
               <a
-                href="https://x.com/"
+                href={socialLinks.x}
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Visit us on X"
@@ -121,15 +128,14 @@ const Footer = () => {
             </h4>
 
             <p className="text-[15px] sm:text-[16px] leading-[1.45] sm:leading-[1.35] text-white/85 max-w-[360px]">
-              Plot No. 47, 3rd Floor, Kotwal Nagar, Khamla, Laxmi Nagar
-              (nagpur), Nagpur, Nagpur, Maharashtra, India, 440022
+              Plot No. 47, 3rd Floor, Kotwal Nagar, Khamla, Laxmi Nagar , Nagpur, Maharashtra, India, 440022
             </p>
 
             <a
-              href="mailto:hr@akulkarnipprocorpsol.com"
+              href="mailto:hr-manager@procorpsol.com"
               className="block text-[14px] sm:text-[16px] font-bold mt-[22px] underline break-all"
             >
-              hr@akulkarnipprocorpsol.com
+              hr-manager@procorpsol.com
             </a>
           </div>
         </div>
